@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   end
 
   private
-  
+
   def book_params
     params.require(:post).permit(:author, :body)
   end
