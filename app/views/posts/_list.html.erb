@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+  <% if user_signed_in? %>
+    <h2>Author: <%= post.author %></h2>
+  <% end %>
+    <h3>Content: <%= post.body %></h3>
+<% end %>
